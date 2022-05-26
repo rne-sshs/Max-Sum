@@ -18,7 +18,7 @@ Max-Sum Belief Propagation: Factor Graph에서 노드 간 메세지를 통해 �
 ### Process
 Max-Sum Belief Propagation으로 얻은 다음의 점화식을 수렴할 때까지 실행  
 <img src="https://user-images.githubusercontent.com/35063338/170418111-c38a2e22-983c-4171-9cb3-e657d3cb2c71.png" width="330" height="100"/>  
-수렴하면 고정된 i에 대하여 <img src="https://user-images.githubusercontent.com/35063338/170420172-e7f55132-b45b-45ae-acaf-7c0b31d39ad8.png" width="65" height="20"/>의 값이 최대가 되는 j와 연결
+수렴하면 고정된 i에 대하여 <img src="https://user-images.githubusercontent.com/35063338/170420172-e7f55132-b45b-45ae-acaf-7c0b31d39ad8.png" width="65" height="20"/>의 값이 양수가 되는 j와 연결
 
 ### Result
 ![image](https://user-images.githubusercontent.com/35063338/170419394-af59ed98-cf0a-4415-b140-668ba7679efd.png)
