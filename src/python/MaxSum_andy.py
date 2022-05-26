@@ -5,6 +5,8 @@ import math, statistics
 #!flag이면 s 행렬을 읽는다
 flag = False
 
+def simil(p1,p2):
+    return -math.sqrt((p1[0]-p2[0])**2+(p1[1]-p2[1])**2)
 
 lmda = 0
 if flag:
@@ -42,8 +44,7 @@ else:
     
 
 
-def simil(p1,p2):
-    return -math.sqrt((p1[0]-p2[0])**2+(p1[1]-p2[1])**2)
+
 
 
 
