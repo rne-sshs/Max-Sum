@@ -3,15 +3,17 @@ import math, statistics
 
 #flag이면 한줄에 두개씩 coordinates 들어오는 txt파일
 #!flag이면 s 행렬을 읽는다
-flag = False
+flag = True
 
-def simil(p1,p2):
-    return -math.sqrt((p1[0]-p2[0])**2+(p1[1]-p2[1])**2)
+
+
 
 lmda = 0
+
+input_filename = "maxsum_3dtest1"
 if flag:
     # #region input
-    input_filename = "maxsumtest1"
+    
     coordinates = open(input_filename + ".txt",'r')
     coor = []
     lines = coordinates.readlines()
@@ -20,33 +22,31 @@ if flag:
         coor.append(tuple(map(float,line.split())))
     n=coor.pop(0)[0]
     n=int(n+.5)//2
+    if len(coor[0])==2:
+        is_3d=False
+    else:
+        is_3d=True
     # #endregion
 
     #region girlboy
     girl = [coor[i] for i in range(n)]
     boy = [coor[i] for i in range(n,2*n)]
     #endregion
-
+    def simil(p1,p2):
+        return -math.sqrt((p1[0]-p2[0])**2+(p1[1]-p2[1])**2+(0 if not is_3d else (p1[2]-p2[2])**2))
     s=[[0]*n for i in range(n)]
     for i in range(n):
         for j in range(n):
             s[i][j]=simil(girl[i],boy[j])
 else:
     s=[]
-    input_filename = 'ising_test_2'
     txtfile = open(input_filename + ".txt",'r')
     lines = txtfile.readlines()
     n=lines.pop(0)
-    n=int(n)
+    n=int(int(n)+.5)//2
     for line in lines:
         s.append(list(map(float,line.split())))
     
-    
-
-
-
-
-
 
 
 a=[[0]*n for i in range(n)]
