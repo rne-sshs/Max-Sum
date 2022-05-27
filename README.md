@@ -27,3 +27,4 @@ Max-Sum Belief Propagation으로 얻은 다음의 점화식을 수렴할 때까�
 ### Result
 ![image](https://user-images.githubusercontent.com/35063338/170419394-af59ed98-cf0a-4415-b140-668ba7679efd.png)
 
+![maxsum_3d_n=250](https://user-images.githubusercontent.com/89206053/170775026-34bd6777-a2e4-4c87-8f6c-e7dbdd038000.png)
