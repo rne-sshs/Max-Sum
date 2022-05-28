@@ -25,7 +25,10 @@ Max-Sum Belief Propagation으로 얻은 다음의 점화식을 수렴할 때까�
 수렴하면 고정된 $i$에 대하여 <img src="https://user-images.githubusercontent.com/35063338/170420172-e7f55132-b45b-45ae-acaf-7c0b31d39ad8.png" width="65" height="20"/>의 값이 양수가 되는 $j$와 연결
 
 ### Results 
-#### $n$=250, $\lambda$=0.3 인 경우 iter에 따라
+#### iter이 커지면서 매칭이 수렴하는 과정
+($n$=250, $\lambda$=0.3)  
+   
+   
 iter=1
 ![maxsum_2d_n=250_it=1](https://user-images.githubusercontent.com/89206053/170835771-59801d90-4e56-4abc-8d0a-d32069824919.png)
 이어지지 않은 점이 많이 있다.  
